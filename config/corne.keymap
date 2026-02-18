@@ -3,6 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    chosen {
+        zmk,matrix_transform = &default_transform;
+    };
+};
+
+/ {
     behaviors {
         lt_spc: layer_tap_space {
             compatible = "zmk,behavior-hold-tap";
